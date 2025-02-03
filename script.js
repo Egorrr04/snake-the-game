@@ -8,8 +8,8 @@ snake[0] ={
 }
 let direction = "right";
 let food ={
-    x: Math.floor(Math.random() * 15 + 1) * box,
-    y: Math.floor(Math.random() * 15 + 1) * box
+    x: Math.floor(Math.random() * 10 + 1) * box,
+    y: Math.floor(Math.random() * 10 + 1) * box
 }
 
 function criarBG(){
@@ -68,8 +68,8 @@ function iniciarJogo(){
     if(snakeX != food.x || snakeY != food.y){
         snake.pop(); //pop tira o último elemento da lista
     }else{
-        food.x = Math.floor(Math.random() * 15 +1) * box;
-        food.y = Math.floor(Math.random() * 15 +1) * box;
+        food.x = Math.floor(Math.random() * 10 +1) * box;
+        food.y = Math.floor(Math.random() * 10 +1) * box;
     }
     
     let newHead ={
