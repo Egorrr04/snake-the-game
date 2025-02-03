@@ -3,12 +3,12 @@ let context = canvas.getContext("2d"); //....
 let box = 32;
 let snake = []; //criar cobrinha como lista, já que ela vai ser uma série de coordenadas, que quando pintadas, criam os quadradinhos
 snake[0] ={
-    x: 8 * box,
+    x: 10 * box,
     y: 8 * box
 }
 let direction = "right";
 let food ={
-    x: Math.floor(Math.random() * 15 + 1) * box,
+    x: Math.floor(Math.random() * 10 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
 }
 
@@ -80,4 +80,4 @@ function iniciarJogo(){
     snake.unshift(newHead); //método unshift adiciona como primeiro quadradinho da cobrinha
 }
 
-let jogo = setInterval(iniciarJogo, 100);
+let jogo = setInterval(iniciarJogo, 200);
